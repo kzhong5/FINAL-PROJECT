@@ -1,0 +1,20 @@
+let currentScreen = 'mainMenu';
+
+function setup() {
+  createCanvas(800, 600);
+  textAlign(CENTER, CENTER);
+  textSize(32);
+}
+
+function draw() {
+  if (currentScreen === 'mainMenu') {
+    background(100, 150, 200);  
+    drawMainMenu();
+  } else if (currentScreen === 'game1') {
+    background(150, 200, 100);  
+    drawGamePlaceholder("Game 1", color(255, 140, 0), color(255, 180, 100)); 
+  } else if (currentScreen === 'game2') {
+    background(200, 100, 150);  // Light purple background for Game 2
+    drawGamePlaceholder("Game 2", color(70, 130, 180), color(100, 180, 230)); 
+  }
+}
