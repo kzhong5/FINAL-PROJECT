@@ -18,3 +18,11 @@ function draw() {
     drawGamePlaceholder("Game 2", color(70, 130, 180), color(100, 180, 230)); 
   }
 }
+
+function drawMainMenu(){
+fill(255);
+text("Main Menu", width/2, height/4);
+
+drawButton(width/2-150,height/2,200,50,"Game 1", color(50,205,50),color(144,238,144),()=>{
+currentScreen = 'game1';
+});
