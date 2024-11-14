@@ -63,6 +63,12 @@ this.size=size;
 this.shapeType=shapeType;
 this.color=color;
 }
+class DraggableShape extends
+Shape{
+  constructor(x,y, shapeType, color){
+  super(x, y, size, shapeType, color);
+  this.dragging = fals;
+}
     }
   }
 }
